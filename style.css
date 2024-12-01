@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  overflow-x: hidden;
+  user-select: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+  height: 75px;
+  position: fixed;
+  z-index: 50;
+  width: 100vw;
+  background-color: black;
+}
+header h2 {
+  color: yellow;
+}
+#nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+#nav a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+#nav:hover #cursor {
+  background-color: black;
+}
+#resNav {
+  /* position: relative; */
+  width: 100vw;
+  display: none;
+}
+#resNav button {
+  background-color: transparent;
+  color: white;
+  border: 0px;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 10px;
+  position: absolute;
+  right: 100px;
+  top: 15px;
+  z-index: 70;
+}
+#resNav div {
+  position: absolute;
+  z-index: 60;
+  top: 0px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  right: 0%;
+  width: 50vw;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateX(100%);
+}
+#resNav div a {
+  padding: 20px 40px;
+  text-decoration: none;
+  font-size: 25px;
+  border-bottom: 1px solid white;
+  font-weight: 600;
+  cursor: pointer;
+  color: black;
+  z-index: 110;
+}
+#resNav div a:hover {
+  color: yellow;
+}
+@media (max-width: 650px){
+    #resNav{
+        display: block;
+    }
+    #nav{
+        display: none;
+    }
+}
+main {
+  position: relative;
+}
+.about {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+  color: white;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+.seprater {
+  width: 100vw;
+  height: 200px;
+  position: relative;
+}
+.black {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+}
+.white {
+  height: 100px;
+  width: 100%;
+  background-color: transparent;
+}
+.seprater svg {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: red;
+}
+.seprater svg:hover {
+  cursor: pointer;
+}
+.experience {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  margin-top: 10px;
+}
+.experience h1 {
+  font-size: 40vw;
+  text-transform: uppercase;
+  text-shadow: 0px 20px 10px gray;
+  cursor: crosshair;
+}
+#cursor {
+  display: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: yellow;
+  box-shadow: 0px 0px 200px 50px yellow;
+  position: fixed;
+  z-index: 100;
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}

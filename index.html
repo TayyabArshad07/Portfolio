@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSAP</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  </head>
+  <body>
+    <main id="main">
+      <header>
+        <h2>Portfolio</h2>
+        <nav id="nav">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="">Projects</a>
+          <a href="">Contact</a>
+        </nav>
+        <nav id="resNav">
+          <button onclick="resNavbar()" ><i id="resNav-btn" class="ri-menu-3-line"></i></button>
+          <div id="resAnchors">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="">Projects</a>
+            <a href="">Contact</a>
+          </div>
+        </nav>
+      </header>
+      <div id="cursor"></div>
+      <div class="about" id="about">
+        <div class="content">
+          <h1 class="first">Hey Guys,</h1>
+          <h1 class="second">Welcome to Website.</h1>
+          <h1 class="third">My name is Tayyab Arshad.</h1>
+          <h1 class="forth">I am a professional Web-Designer.</h1>
+        </div>
+      </div>
+
+      <div class="seprater" id="seprater">
+        <div class="black"></div>
+        <div class="white"></div>
+        <svg width="1000" height="200">
+          <path stroke="white" fill="transparent" id="path1" />
+          <path stroke="grey" fill="transparent" id="path2" />
+          <path stroke="black" fill="transparent" id="path3" />
+        </svg>
+      </div>
+
+      <div class="experience" id="experience">
+        <h1 id="ExpHeading">Experience</h1>
+      </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
