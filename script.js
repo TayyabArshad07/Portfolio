@@ -201,11 +201,18 @@ const resNavbar = () => {
       stagger: 0.5
     })
     BtnValue = true;
-    resNavbtn.setAttribute("class", "ri-close-large-line")
+    resNavbtn.setAttribute("class", "ri-close-line")
+    resNavbtn.setAttribute("style", "border:2px solid white; border-radius: 50%; background: rgba(255, 255, 255, 0.2);")
     gsap.to("#resAnchors", {
       transform: "translateX(0%)",
       display:"flex",
       duration: 0.5,
     });
+    gsap.from(resNavbtn,{
+      opacity:0,
+      transform: "scale 0",
+      duration: 1,
+      delay: 0.5
+    })
   }
 };
